@@ -75,23 +75,13 @@ WSGI_APPLICATION = 'book_management.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'book_library',
-        'USER': 'root',
-        'PASSWORD': '@tws_9nik}#09',
-        'HOST': 'localhost',  # Change to your MySQL server host if needed
-        'PORT': '3306',      # Change to your MySQL server port if needed
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
 
 
 # Password validation
